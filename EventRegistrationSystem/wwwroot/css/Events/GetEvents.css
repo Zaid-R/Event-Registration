@@ -1,0 +1,155 @@
+﻿/* Styles for the Events table */
+h1 {
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .table th, .table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+        font-size: 16px;
+    }
+
+    .table th {
+        background-color: #f8f9fa;
+        color: #444;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+
+    .table td {
+        background-color: #fff;
+    }
+
+    .table tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* Link styles for actions inside the table */
+    .table td a {
+        color: #007bff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+
+        .table td a:hover {
+            text-decoration: underline;
+            color: #0056b3;
+        }
+
+/* Button for adding a new event */
+a[asp-action="AddEvent"] {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+    a[asp-action="AddEvent"]:hover {
+        background-color: #218838;
+    }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    a[asp-action="AddEvent"] {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* General link styles inside the table */
+td a {
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Style for Details link */
+.AAS {
+    background-color: #5fc4c1;
+    color: white;
+    border: 1px solid #5fc4c1;
+}
+
+    .AAS:hover {
+        background-color: #5fc4c1;
+        color: white;
+    }
+
+/* Style for Edit link */
+.ASS {
+    background-color: #ffc107;
+    color: white;
+    border: 1px solid #ffc107;
+}
+
+    .ASS:hover {
+        background-color: #e0a800;
+        color: white;
+    }
+
+/* Style for Delete link */
+.SSA {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #dc3545;
+}
+
+    .SSA:hover {
+        background-color: #c82333;
+        color: white;
+    }
+
+/* Align links inside the table cell */
+td a {
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+}
+
+/* Adjust table layout */
+td {
+    vertical-align: middle;
+    text-align: center;
+}
+/* Button for adding a new event */
+.add-event-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    text-align: center; /* Center text */
+}
+
+    .add-event-button:hover {
+        background-color: #218838; /* Darker green on hover */
+    }
